@@ -2,7 +2,7 @@
 
 var express = require("express");
 var app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; 
 
 //funkcje na serwerze obsługujące konkretne adresy w przeglądarce
 var path = require("path");
